@@ -1,0 +1,41 @@
+<html>
+    
+<head>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>I Love You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="card">
+            <h1>Hai Cantik</h1>
+        </header>
+
+        <main>
+            <aside class="card">
+                <img src="https://c.tenor.com/Z8ezUHZzcLoAAAAC/love.gif" />
+                <aside>
+                    <section class="card">
+                        <h1>Maukah Engkau Menjadi Pacarku?</h1>
+                    </section>
+                    <section>
+                        <button id="btn_mau" onclick="alert('I Love You sayang')">Mau</button>
+                        <button id="btn_gamau" onclick="gamau(this)" class="button"> Gamau</button>
+                    </section>
+        </main>
+    </div>
+</body>
+
+<script>
+    function gamau(id) {
+        var mau = document.getElementById("btn_mau");
+        var i = Math.floor(Math.random() * 300) + 1;
+        var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+        id.style.left = i + "px";
+        id.style.top = j + "px"
+    }
+</script>
+
+</html>
